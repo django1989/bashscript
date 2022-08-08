@@ -1,0 +1,4 @@
+showip () {
+ip=`hostname -i`
+echo $ip | cut -d " " -f1
+}
