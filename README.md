@@ -1,2 +1,2 @@
-# bashscript
-Bash Script Project
+#bashscript
+Simple Bash Script Examples
