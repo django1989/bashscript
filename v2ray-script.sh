@@ -39,7 +39,7 @@ cat <<EOF > ./docker-compose.yml
 version: "3"
 services:
   v2ray:
-    image: v2fly/v2fly-core:5.1.0
+    image: v2fly/v2fly-core:latest
     container_name: v2ray
     restart: always
     ports:
