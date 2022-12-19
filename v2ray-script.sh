@@ -151,7 +151,7 @@ VMESSOBFS=$(sed ':a; N; s/[[:space:]]//g; ta' <<<"$VMESSOBFS")
 
 cat <<EOF > ./bridge-install-by-curl.log
   ## Run this command on your bridge(interanet) server:
-  sudo curl -s https://github.com/django1989/bashscript/blob/main/v2ray-script.sh | bash -s $IP $1 $UUID
+  sudo curl -s https://gist.githubusercontent.com/mahmoud-eskandari/960899f3494a1bffa1a29631dbaf0aee/raw/f0b012c43e68468e7683c3e4c2a104dd11841eb7/install-bridge.sh | bash -s $IP $1 $UUID
   
   ## If your internal server hasn't access to foreign internet you can also use internal mirror:
    sudo curl -s https://v2rayv2ray.s3.ir-thr-at1.arvanstorage.ir/run.sh | bash -s $IP $1 $UUID
