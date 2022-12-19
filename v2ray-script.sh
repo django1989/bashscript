@@ -39,7 +39,7 @@ cat <<EOF > ./docker-compose.yml
 version: "3"
 services:
   v2ray:
-    image: v2fly/v2fly-core:v5.1.0
+    image: v2fly/v2fly-core:5.1.0
     container_name: v2ray
     restart: always
     ports:
@@ -151,7 +151,7 @@ VMESSOBFS=$(sed ':a; N; s/[[:space:]]//g; ta' <<<"$VMESSOBFS")
 
 cat <<EOF > ./bridge-install-by-curl.log
   ## Run this command on your bridge(interanet) server:
-  ./v2ray-script.sh | bash -s $IP $1 $UUID
+  sudo curl -s https://github.com/django1989/bashscript/blob/main/v2ray-script.sh | bash -s $IP $1 $UUID
   
   ## If your internal server hasn't access to foreign internet you can also use internal mirror:
    sudo curl -s https://v2rayv2ray.s3.ir-thr-at1.arvanstorage.ir/run.sh | bash -s $IP $1 $UUID
